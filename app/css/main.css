@@ -1,0 +1,62 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 5px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.jumbotron{
+    background-color: #D9633F;
+    color:#FFF;
+    font-style: italic;
+}
+.home-category{
+    padding:30px 5px;
+    margin-bottom: 20px;
+}
+.home-main-row{
+    margin:5px 0 5px 0;
+}
+.btn-bootstrap {
+    background-color: #B03FD9;
+    color:#FFF;
+}
+.btn-angularjs{
+    background-color: #3F51D9;
+    color:#FFF;
+}
+
+.btn-bower{
+    background-color: #FFD433;
+    color:#FF4C33;
+}
+.btn-grunt{
+    background-color: #D27828;
+    color:#FFF;
+}
+.btn-java{
+    background-color: #CC1432;
+    color:#FFF;
+}
+.btn-javascript{
+    background-color: #89E3E0;
+    color: #FFF;
+}
+
