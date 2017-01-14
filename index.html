@@ -18,82 +18,19 @@
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Vijay Bhaskar Akepati</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li class="active">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>  
-
-  <div class="container-fluid">
-    <div class="jumbotron">
-        <h2>Welcome to Vijay Bhaskar Tutorials. Enjoy learning new things</h2>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12 ">
-        <a class="btn btn-lg btn-block home-category btn-angularjs" role="button" href="#">AngularJs related questions</a>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12 ">
-        <a type="button" class="btn btn-lg btn-block home-category btn-javascript" role="button" href="#">JavaScript related questions</a>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12 ">
-        <a type="button" class="btn btn-lg btn-block home-category btn-java" role="button" href="#">Java related questions</a>
-      </div>
-       <div class="col-md-4 col-sm-6 col-xs-12">
-        <a type="button" class="btn btn-lg btn-block home-category btn-bootstrap" role="button" href="#">Bootstrap related questions</a>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12 ">
-        <a type="button" class="btn btn-lg btn-block home-category btn-bower" role="button" href="#">Bower related questions</a>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12 ">
-        <a type="button" class="btn btn-lg btn-block home-category btn-grunt" role="button" href="#">Grunt related questions</a>
-      </div>
-
-    </div>
-
-    </div>
+    
   <div ng-view></div>
-
-  <div><b>Vijay bhaskar successfully hosted first angularjs app</b> <span app-version></span></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="app/js/main.js"></script>
   <script src="app/app.js"></script>
+  <script src="app/home/homeController.js"></script>
   <script src="app/view1/view1.js"></script>
   <script src="app/view2/view2.js"></script>
   <script src="app/components/version/version.js"></script>
