@@ -1,0 +1,43 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+			<div class="panel panel-info" data-ng-controller="javaController">
+			  <div class="panel panel-heading">Java Questions</div>
+			  <div class="panel-body">
+			    <h4>1. Removing all duplicates from a list in Java8</h4>
+			    Using Lambdas in Jav8, We are going to <b>use the distinct() method from Stream API</b> to remove duplicates from list
+			    <br/>
+			    <pre>
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class RemoveDuplicatesFromList {
+
+	public static void main(String args[]){
+		List<Integer> duplicateList = Arrays.asList(1,2,1,3,2);
+		List<Integer> distinctList = duplicateList.stream().distinct().collect(Collectors.toList());
+		System.out.println(distinctList);
+	}
+}							    					
+			    </pre>
+			    <pre>
+Output: [1, 2, 3]
+			    </pre>
+			  </div>
+			</div>
+		</div>
+		<div class="col-md-4 col-lg-4 hidden-sm hidden-xs">
+			<div class="panel panel-info" data-ng-controller="javaController">
+			  <div class="panel panel-heading">Java related Topics</div>
+			  <div class="panel-body">
+			    Please select the below topics to see the related questions
+			  </div>
+			  <!-- List group -->
+			  <div class="list-group">
+				  <a href="#{{javaTopic.name}}" class="list-group-item" ng-repeat = "javaTopic in javaTopicslist">{{javaTopic.display}}</a>
+		    	</div>
+			</div>
+		</div>
+	</div>
+</div>
