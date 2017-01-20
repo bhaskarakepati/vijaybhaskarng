@@ -16,5 +16,9 @@ myApp.config(['$routeProvider',function($routeProvider){
 			controller: 'javaController'
 		})
 	.when('/java8',{template:'This is java8   <a class="btn btn-lg btn-primary" role="button" href="#home"> Go back to Home</a>'})
+	.when('/assertj',{
+		templateUrl: 'app/assertj/assertjHome.html',
+		controller: 'assertjController'
+	})
 	.otherwise('/home')
 }]);

@@ -1,6 +1,18 @@
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+		<div class="col-md-3 col-lg-3 hidden-sm hidden-xs">
+			<div class="panel panel-info" data-ng-controller="javaController">
+			  <div class="panel panel-heading">Java related Topics</div>
+			  <div class="panel-body">
+			    Please select the below topics to see the related questions
+			  </div>
+			  <!-- List group -->
+			  <div class="list-group">
+				  <a href="#{{javaTopic.name}}" class="list-group-item" ng-repeat = "javaTopic in javaTopicslist">{{javaTopic.display}}</a>
+		    	</div>
+			</div>
+		</div>
+		<div class="col-md-9 col-lg-9 col-sm-12 col-xs-12">
 			<div class="panel panel-info" data-ng-controller="javaController">
 			  <div class="panel panel-heading">Java Questions</div>
 			  <div class="panel-body">
@@ -27,17 +39,6 @@ Output: [1, 2, 3]
 			  </div>
 			</div>
 		</div>
-		<div class="col-md-4 col-lg-4 hidden-sm hidden-xs">
-			<div class="panel panel-info" data-ng-controller="javaController">
-			  <div class="panel panel-heading">Java related Topics</div>
-			  <div class="panel-body">
-			    Please select the below topics to see the related questions
-			  </div>
-			  <!-- List group -->
-			  <div class="list-group">
-				  <a href="#{{javaTopic.name}}" class="list-group-item" ng-repeat = "javaTopic in javaTopicslist">{{javaTopic.display}}</a>
-		    	</div>
-			</div>
-		</div>
+		
 	</div>
 </div>
