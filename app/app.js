@@ -20,5 +20,9 @@ myApp.config(['$routeProvider',function($routeProvider){
 		templateUrl: 'app/assertj/assertjHome.html',
 		controller: 'assertjController'
 	})
+	.when('/bower',{
+		templateUrl: 'app/bower/bowerHome.html',
+		controller: 'bowerController'
+	})
 	.otherwise('/home')
 }]);

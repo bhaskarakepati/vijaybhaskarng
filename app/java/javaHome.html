@@ -36,6 +36,43 @@ public class RemoveDuplicatesFromList {
 			    <pre>
 Output: [1, 2, 3]
 			    </pre>
+			    <h4>2. Sort list of objects with a specific property in Java8</h4>
+			    In Jav8, we can use below code to sort the object 
+			    <br/>
+			    <pre>
+package com.vijay.java8;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
+public class RemoveDuplicatesFromList {
+
+	public static void main(String args[]){
+		Customer customer1 = new Customer();
+		customer1.setId(2);
+		customer1.setName("Vijay");
+		Customer customer2 = new Customer();
+		customer2.setId(1);
+		customer2.setName("Bhaskar");
+		List<Customer> customerList = new ArrayList<Customer>();
+		customerList.add(customer1);customerList.add(customer2);
+		customerList.forEach(customer->System.out.println("Before Sort: "+customer.getId()+","+customer.getName()));
+		//Sort
+		customerList.sort(Comparator.comparing(Customer::getId));
+		
+		customerList.forEach(customer->System.out.println("After Sort: "+customer.getId()+","+customer.getName()));
+	}
+}
+
+Customer: This is a POJO(Plain Old Java Object) object which has id and name properties with setters and getters.						    					
+			    </pre>
+			    <pre>
+Output: Before Sort: 2,Vijay
+Before Sort: 1,Bhaskar
+After Sort: 1,Bhaskar
+After Sort: 2,Vijay
+			    </pre>
 			  </div>
 			</div>
 		</div>
