@@ -1,4 +1,4 @@
-<div class="panel-body">
+<div class="panel-body" ng-controller="bowerController">
 			    <h3>Bower is a Package manager for the web</h3>
 			     <h4><b>Now a days websites are made of lot of things -- libraries, frameworks, utilities and assets. Bower manages all these things for you.</b></h4>
 			     <p>Keeping track of all these packages and making sure they are up to date (or set to the specific versions you need) is tricky. Bower to the rescue! </P
@@ -8,4 +8,18 @@ Bower can manage components that contain HTML, CSS, JavaScript, fonts or even im
 To get started, Bower works by fetching and installing packages from all over, taking care of hunting, finding, downloading, and saving the stuff you’re looking for. Bower keeps track of these packages in a manifest file, bower.json. How you use packages is up to you.</p>
 <p>
 Bower is optimized for the front-end. If multiple packages depend on a package - jQuery for example - Bower will download jQuery just once. This is known as a flat dependency graph and it helps reduce page load.</p>
+<p>
+	<b>Example:</b>
+	Let's say you want to include jQuery in your project. Usually you would go to jquery.com, find and click on the correct download link, then unzip and put the files in the right directory.
+	With Bower, just run the following command:
+	<p class="bower-command">$ bower install jquery</p>
+	Now a `bower_components` directory with a `jquery` folder will be created.
+	For more information on packages refer <button class="btn btn-primary" ng-click="$parent.selected.value=1">install and Use Bower</button>
+
+	AngularJS: 
+	<a href="http://stackoverflow.com/questions/14049480/what-are-the-nuances-of-scope-prototypal-prototypical-inheritance-in-angularjs/14049482#14049482" target="_blank"> Parent and child scope relationship </a>
+
+</p>
+
+
 </div>

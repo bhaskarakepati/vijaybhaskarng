@@ -1,7 +1,45 @@
 <div class="panel-body">
 	<h3 class="bowerHeading">Install Bower</h3>
 	<p> Bower is a command line utility. You can install it with npm (Node Package Manager)</p>
-	<p> bower requires node, npm and git. So we have to install them before installing bower.You can install bower by using below command.</p>
+	<b>bower requires node, npm and git.</b> So we have to install them before installing bower.You can install bower by using below command.</p>
 	<p class="bower-command"> $ npm install -g bower</p>
 	<p><b>-g</b> means It will install bower globally. So that we can run bower from any where in the system. Not just from the installed directory.</p>
+	<h3 class="bowerHeading">Search Packages</h3>
+	<p>You can search for available packages with the below command</p>
+	<p class="bower-command"> $ bower search "package-name"</p>
+	Example: <p class="bower-command">$ bower search bootstrap</p>
+	<h3 class="bowerHeading">Install Packages</h3>
+	<p>Install packages with <b>bower install</b>. Bower installs packages to <b>bower_components/</b>.</p>
+	<p class="bower-command"> $ bower install "package"</p>
+	A package can be a GitHub shorthand, a Git endpoint, a URL, and more. Below are the ways we can install.
+
+	<p>1.installs the project dependencies listed in bower.json</p>
+	<p class="bower-command">$ bower install </p>
+	2. registered package
+	<p class="bower-command">$ bower install jquery</p>
+	3. GitHub shorthand
+	<p class="bower-command">$ bower install desandro/masonry</p>
+	4. Git endpoint
+	<p class="bower-command">$ bower install git://github.com/user/package.git</p>
+	5. URL
+	<p class="bower-command">$ bower install http://example.com/script.js</p>
+	<p>You can install a specific version of the package by adding a pound-sign (#) after the package name, followed by the version number.</p>
+	<p class="bower-command">bower install "package"#"version"</p>
+	<h3 class="bowerHeading">Save Packages</h3>
+	<p>Create a <b>bower.json</b> file for your package with <b>bower init.</b>
+
+	Then save new dependencies to your <b>bower.json</b> with the below command</p>
+	<p class="bower-command"> $ bower install PACKAGE --save</p>
+	<h3 class="bowerHeading">Use Packages</h3>
+	<p>How you use packages is up to you. We recommend you use Bower together with <b>Grunt, RequireJS, Yeoman, </b>and lots of other tools or build your own workflow with the API. You can also use the installed packages directly, like this, in the case of jquery:</p>
+	<p class="bower-command"> script src="bower_components/jquery/dist/jquery.min.js"</p>
+	<h3 class="bowerHeading">Maintaining dependencies</h3>
+	<p>Using bower install <package> --save will add "package" to your project’s bower.json dependencies array.</p>
+
+	# install package and add it to bower.json dependencies
+	<p class="bower-command"> $ bower install <package> --save</p>
+	<p>Similarly, using bower install <package> --save-dev will add "package" to your project’s bower.json devDependencies array.</p>
+	# install package and add it to bower.json devDependencies
+	<p class="bower-command"> $ bower install <package> --save-dev</p>
+
 </div>
