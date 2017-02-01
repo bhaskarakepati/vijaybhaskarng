@@ -23,6 +23,6 @@ assertThat(expectedList).usingFieldByFieldElementComparator().containsExactlyEle
 List<Item> expectedList = new ItemsProvider().getItems();
 List<Item> actualList = new ItemsProvider().getItems();
 
-assertThat(expectedList).usingFieldByFieldElementComparator().containsAll(actualList);
+assertThat(expectedList).usingFieldByFieldElementComparator().containsOnlyElementsOf(actualList);
 </code></pre>
 </div>
