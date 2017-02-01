@@ -10,6 +10,7 @@ myApp.controller('homeController',['$log','$scope',function($log,$scope){
 	 						{name:'Bootstrap related questions',cssValue:'bootstrap'},
 	 						{name:'Grunt related questions',cssValue:'grunt'},
 	 						{name:'Bower related questions',cssValue:'bower'},
-	 						{name:'AssertJ related questions',cssValue:'assertj'}];
+	 						{name:'AssertJ related questions',cssValue:'assertj'},
+	 						{name:'Books',cssValue:'books'}];
 
 }])

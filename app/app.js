@@ -24,5 +24,9 @@ myApp.config(['$routeProvider',function($routeProvider){
 		templateUrl: 'app/bower/bowerHome.html',
 		controller: 'bowerController'
 	})
+	.when('/books',{
+		templateUrl: 'app/books/booksHome.html',
+		controller: 'booksController'
+	})
 	.otherwise('/home')
 }]);

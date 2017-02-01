@@ -8,7 +8,7 @@ exports.config = {
   ],
 
   capabilities: {
-    'browserName': 'chrome'
+    'browserName': 'firefox'
   },
 
   baseUrl: 'http://localhost:8000/',
@@ -16,6 +16,7 @@ exports.config = {
   framework: 'jasmine',
 
   jasmineNodeOpts: {
+    showColours : true,
     defaultTimeoutInterval: 30000
   }
 

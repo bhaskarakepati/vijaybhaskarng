@@ -1,0 +1,30 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+			<div class="panel panel-info">
+			  <div class="panel panel-heading">Books</div>
+			  <div class="panel-body">
+			    <b>Please select the below books</b>
+			  </div>
+			  <!-- List group -->
+			  	<div class="list-group">
+				  <a href="{{books.link}}" target="_blank" class="list-group-item" ng-repeat = "books in booksList">{{books.display}}</a>
+		    	</div>
+			</div>
+		</div>
+		<!--
+		<div class="col-md-9 col-lg-9 col-sm-12 col-xs-12">
+			<div class="panel panel-info">
+			  <div class="panel panel-heading">Bower</div>
+			<div ng-switch="selected.value">
+			  <div ng-switch-when="0"><div ng-include src='"app/bower/introduction.html"' ></div></div>
+			  <div ng-switch-when="1"><div ng-include src='"app/bower/installAndUse.html"' ></div></div>
+			  <div ng-switch-when="2"><div ng-include src='"app/bower/configuration.html"' ></div></div>
+			</div>
+			</div>
+		</div>-->
+		
+	</div>
+
+</div>
+</div>
