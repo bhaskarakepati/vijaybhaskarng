@@ -9,7 +9,7 @@ myApp.config(['$routeProvider',function($routeProvider){
 		templateUrl:'app/home/home.html',
 		controller: 'homeController'
 	})
-	.when('/services',{template:'This is services   <a class="btn btn-lg btn-primary" role="button" href="#home"> Go back to Home</a>'})
+	.when('/services',{templateUrl:'app/services/Services.html'})
 	.when('/contact',{template:'This is contact   <a class="btn btn-lg btn-primary" role="button" href="#home"> Go back to Home</a>'})
 	.when('/java',{
 			templateUrl:'app/java/javaHome.html',
